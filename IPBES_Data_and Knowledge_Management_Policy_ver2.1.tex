@@ -1,0 +1,280 @@
+\documentclass{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{titlesec}
+\usepackage{textcomp}
+\usepackage{footnote}
+\usepackage{lipsum}
+\makesavenoteenv{tabular}
+\usepackage{enumitem}
+\usepackage{fontawesome5} % For the email (envelope) icon
+
+\usepackage{glossaries}
+\makeglossaries
+
+\input{Glossary}
+
+\title{IPBES DATA AND KNOWLEDGE MANAGEMENT POLICY}
+\author{
+    \LARGE \textbf{Editors} \\[0.5cm]  % This adds "Editors" in bold and slightly spaced from the names
+    %%
+    Rainer M. Krug \href{https://orcid.org/0000-0002-7490-0066}{\includegraphics[width=10pt]{orcid.png}}\ \href{mailto:Rainer@Krugs.de}{\faEnvelope}\ \thanks{Institution Name} \\
+    %%
+    Peter Bates \\ 
+    %%
+    Joy Kumagai \\
+    %%
+    Aidin Niamir
+}
+\date{}
+
+\begin{document}
+
+\renewcommand{\author}{Editors}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% begin Titlepage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+
+    {\LARGE \textbf{Contributing Authors (Previous Versions)}} \\[0.5em]
+    Rainer M. Krug, Benedict A. Omare, Wouter Addink, Gregoire Dubois, Cornelia Krug, Howard Nelson, Fatima Parker-Allie, Debora Pignatari Drucker, David Thau, Aidin Niamir
+    
+    \vspace{1.5em}
+    
+    {\LARGE \textbf{DOI}} \\[0.5em]
+    \href{https://doi.org/10.5281/zenodo.3551078}{10.5281/zenodo.3551078}
+    
+    \vspace{1.5em}
+    
+    {\LARGE \textbf{Version}} \\[0.5em]
+    Version 2.1.DRAFT
+    
+    \vspace{1.5em}
+    
+    {\LARGE \textbf{Date}} \\[0.5em]
+    \today
+    
+    \vspace{1.5em}
+    
+    {\LARGE \textbf{Suggested Citation}} \\[0.5em]
+    IPBES (2022): IPBES Data and Knowledge Management Policy ver. 2.0, Krug, R.M., Omare, B., and Niamir, A. (eds.) IPBES secretariat, Bonn, Germany. DOI: \href{https://doi.org/10.5281/zenodo.3551078}{10.5281/zenodo.3551078}
+    
+    \vspace{1.5em}
+    
+    {\LARGE \textbf{Latest Version}} \\[0.5em]
+    To get the latest version of the policy visit \href{https://doi.org/10.5281/zenodo.3551078}{https://doi.org/10.5281/zenodo.3551078}
+    
+    \vspace{1.5em}
+    
+    {\LARGE \textbf{Inquiries}} \\[0.5em]
+    Inquiries should be directed to \href{mailto:the.email@somewhere}{the.email@somewhere}
+
+\end{center}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%% end Titlepage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents
+\newpage
+
+\section{Preamble}
+
+The \gls{plenary} of the Intergovernmental Science-Policy Platform on Biodiversity and Ecosystem Services (IPBES), in section II of its decision IPBES-2/5, established a \textit{task force} on knowledge and data for the period of its first work programme 2014‒2018. In decision IPBES-3/1, section II, the \gls{plenary} approved the data and information management plan set out in annex II to the same decision. At its seventh session, in decision IPBES-7/1, section II, the \gls{plenary} adopted the rolling work programme of the Platform up to 2030, which included among its six objectives objective 3 (a), advanced work \textit{on knowledge and data}. In section IV of its decision IPBES-7/1, the \textit{Plenary }recalled the establishment of the \textit{task force} and extended its mandate for the implementation of objective 3 (a) of the rolling work programme of the Platform up to 2030, in accordance with the revised terms of reference set out in annex II to the same decision, and requested the \gls{bureau} and \gls{mep}, through the \textit{IPBES secretariat} to constitute the \textit{task force} in accordance with the terms of reference. According to its terms of reference, the \textit{task force} on knowledge and data oversees and takes part in the implementation of objective 3 (a) of the rolling work programme up to 2030 and acts in accordance with relevant decisions by the \gls{plenary} and its subsidiary bodies. Its mandate includes, among other things, to guide the \textit{secretariat}, including the dedicated \textit{technical support unit}, in the management of the \textit{data}, information and knowledge used in \gls{ipbesproducts}, including the development of the web-based infrastructure, to ensure their long-term availability and data interoperability.
+
+In line with this mandate, the \textit{task force} on knowledge and data drafted and, upon approval by the \gls{mep} and \gls{bureau} at their 14th meetings in January 2020, published the first version of the IPBES data management policy (version 1.0). The \textit{task force }revised the policy in September 2020 and published the revision (version 1.1) after approval by the \textit{Multidisciplinary Expert Panel }and \textit{Bureau } at their 15th meetings in November 2020. The data management policy was presented to the \textit{Plenary }in document IPBES-8/INF/12. The \gls{plenary}, in decision IPBES-8/1 section IV, took note of the data management policy, as presented. The data management policy was further revised in 2021 and the task force on knowledge and data published the IPBES data and knowledge management policy (version 2.0) after approval by the \textit{Multidisciplinary Expert Panel }and \textit{Bureau }at their 18th meetings in February 2022.
+
+The purpose of the policy is to provide overarching guidance on the management of \textit{data and knowledge }to current assessments and the work of \textit{task forces} regarding \gls{ipbesproducts}. The policy is grounded in the principles of open science, accessibility, and building knowledge through partnerships.
+
+\section{Introduction}
+
+This policy builds on the data and information management plan approved by the \textit{IPBES Plenary} set out in annex II to decision IPBES-3/1 and the terms of reference of the \textit{task force} set out in annex II to decision IPBES-7/1. In particular, it builds on the activity “reviewing and developing data and metadata guidelines”, and is grounded in its principles for “managing knowledge, information, and data” in the Platform, in particular accessibility, and open science. Definitions of the terms used throughout this policy can be found in annex I.
+
+\textbf{Open science}. The open science approach promotes the generation of \textit{knowledge }through collaboration based on free and open access to \textit{knowledge}, information, and \textit{data}. Open science, therefore, ensures that the work of all the \textit{experts} and \textit{stakeholders} involved is fully recognized, properly attributed, documented, and preserved. Adoption of these principles and of this approach means a significant cultural change in the ways in which science is done and scientific results and underlying \textit{data} are shared publicly by authors, journals and research organizations and thus made relevant to society. In the context of the Platform, the open science approach could engender very significant advances in \textit{data} integration, analysis and interpretation and could lead to a better understanding of nature and its contribution to a good quality of life. Two key aspects of open science are “accessibility” and “inclusivity and \textit{collective benefit}”.
+\begin{itemize}
+    \item \textbf{Accessibility.} Free and open access to its deliverables and to the material on which they are based is a core value of the Platform. Consequently, the policy will aim for open, permanent access to \textit{data} and information sources for its deliverables (e.g., in the scientific literature) with minimal restrictions; enforce the use of common and accessible file formats in the Platform’s deliverables; emphasize the need to communicate the availability of \textit{data} and information; and, facilitate multilingual discovery and sharing of \textit{data} and information. The Platform acknowledges that making \textit{data} and information accessible may not always mean it is always accessible to all IPBES members and\textit{ stakeholders}, including IPLCs, as technical, economical, political or any other reasons may limit the accessibility, but not its findability.
+    \item \textbf{Inclusivity and }\textit{\textbf{collective benefit}}\textbf{.} Cooperation in \textit{research} and broad acceptance of the resulting \gls{ipbesproducts} is essential for the Platform to fulfil its mandate. For the acceptance and cooperation of \textit{stakeholders} and \textit{data and knowledge holders}, inclusivity in all stages of the \textit{research} is essential, and IPBES takes many steps to try to enhance participation beyond only scientific researchers. IPBES acknowledges the richness of diverse knowledge systems and epistemologies and diversity of knowledge holders and producers, including ILK and IPLCs; also outlined in the \gls{unescoopenscience}.
+\end{itemize}
+
+Thus, \textit{data and knowledge }management within IPBES should be based on UNEP’s over-arching strategies, policies and guidelines, to the maximum extent possible within the mandate of the Platform, allowing IPBES members and \textit{stakeholders}, \textit{IPLCs} and other interested parties to use and access \gls{ipbesproducts}, and \textit{knowledge and data} gathered or documented during their production and consequently derive benefit from them. IPBES has recognised the importance of \textit{indigenous and local knowledge }(ILK) to the conservation and sustainable use of ecosystems, and the procedures and protocols to be used with regard to ILK and IPLCs have been developed in detail. From its inception, the Platform aims to enhance inter-relationships and complementarities between different knowledge systems.
+
+\section{Objectives}
+
+To fulfil its function to generate transparent assessments, IPBES is committed to implementing \textit{data and knowledge} management procedures that are discipline-appropriate, practical, cost-effective and sustainable, and supportive of its objectives. The data and knowledge management policy is the primary reference document for IPBES \textit{data and knowledge }management\textit{.} It serves to ensure that \textit{data and knowledge} is managed correctly and consistently, and is maintained to the highest possible standard. The data and knowledge management policy has the following objectives:
+
+\begin{enumerate}[label=(\alph*)]
+    \item To ensure that \textit{data and knowledge} produced during IPBES \textit{research }activities, within as well as between assessments, follow the \textit{FAIR }and \textit{CARE principles to the fullest extent possible within the mandate of the Platform};
+    
+    \item To ensure that \gls{ipbesproducts}, to the maximum extent possible within the mandate of the Platform, are openly available and designed so they are accessible; allowing all scientists, IPBES members, IPLCs and others to use them and consequently derive benefit from them.
+    
+    \item To provide a framework for all IPBES entities, including \textit{technical support units} and \textit{experts, }to fulfil their responsibilities with respect to management, handling, preservation, and distribution of \textit{data and knowledge }and \textit{generated data} within the Platform;
+    
+    \item To guide the \textit{experts }to fulfil their responsibilities to develop one or more \textit{data and knowledge management reports }which fulfil the requirements of this policy;
+    
+    \item To provide a suggested \textit{workflow} for long-term storage and preservation of \gls{ipbesproducts} to the \textit{experts};
+    
+    \item To promote the usage of open-source software to enable users to recreate and use \gls{ipbesproducts} without limitations.
+\end{enumerate}
+
+
+\section{General Principles}
+
+To the fullest extent possible within the mandate of the Platform, \gls{ipbesproducts} and associated \textit{research} should be managed following the \textit{FAIR and CARE principles} throughout their life cycle in line with the commitment to open science and accessibility.
+
+\gls{ipbesproducts} and associated research relating to \textit{IPLCs} or incorporating \textit{indigenous and local knowledge}, will follow IPBES’s approach to recognising and working with \textit{indigenous and local knowledge }(Annex II to decision IPBES-5/1).
+
+\gls{ipbesproducts} which follow the \textit{FAIR }and\textit{ CARE }principles \textit{to the fullest extent possible within the mandate of the Platform} are essential for fulfilling the functions of IPBES, to perform regular and timely assessments of \textit{knowledge} on nature, its contribution to good quality of life, and their interlinkages, in a transparent and reproducible manner.
+
+In the management, handling, and delivery of \gls{ipbesproducts}, national law should be respected, which includes rights of privacy, intellectual property rights, data governance regulations, and duties of confidentiality as well as other legal obligations to which IPBES has agreed as binding upon IPBES and that fall outside the scope of this policy. \textit{IPBES products }should be anonymized, if necessary, before long-term storage and publication.
+
+IPBES is committed to providing guidance to all \textit{experts }associated with IPBES to ensure that they are aware of and follow IPBES procedures, which will aim to follow the \textit{FAIR and CARE principles} to the fullest extent possible within the mandate of the Platform.
+
+\section{Application}
+
+IPBES will apply this policy to all new and ongoing \gls{ipbesproducts} and related \textit{research}. The policy should be reviewed at least every 2 years by the \textit{task force }on knowledge and data to align with new developments concerning \textit{data and knowledge management and}\textit{FAIR }and\textit{ CARE }data principles.
+
+Exceptions and deviations to this policy have to be agreed upon in the \textit{data and knowledge management report} in writing and shared with \textit{secretariat }and the \textit{technical support unit }on knowledge and data\textit{.}
+
+\section{Scope}
+
+This policy applies to all \gls{ipbesproducts}. \textit{IPBES experts }are required to abide by the terms and conditions agreed with third parties. IPBES also recognizes that such third parties’ policies are evolving and that the latter may require higher levels of data accessibility and dissemination in the future.
+
+\section{Compliance and enforcement}
+
+Compliance with the data and knowledge management policy is mandatory for all IPBES entities involved in the preparation of the \gls{ipbesproducts}. Compliance will be monitored by the \textit{technical support unit} on knowledge and data. Products will not be accepted as \gls{ipbesproducts} unless they comply with this policy.
+
+\section{Roles and responsibilities}
+
+\begin{enumerate}[label=(\alph*)]
+    \item \textit{\textbf{Bureau }}\textbf{and }\textit{\textbf{Multidisciplinary Expert Panel}}
+    \begin{itemize}
+        \item Will review any changes to the policy as proposed by the \textit{task force} on knowledge and data and consider these for approval;
+    \end{itemize}
+
+    \item \textit{\textbf{Secretariat}}
+    \begin{itemize}
+        \item Will execute, under the guidance of the \textit{task force }on knowledge and data and in cooperation with the \textit{technical support unit} on knowledge and data, the development and maintenance of the guidelines, tutorials, \textit{workflows} and examples to enable \textit{experts} to implement these policies;
+        \item Will keep an accurate, up-to-date and accessible list of \textit{references} (including rich metadata), and links to \textit{external data}, \textit{knowledge }and generated \textit{data} as used for and in the \gls{ipbesproducts};
+        \item Will add specific and consistent keywords and metadata to the \textit{data deposit packages} (e.g., chapter, assessment, figure) to make the \textit{data} findable and identifiable;
+    \end{itemize}
+
+    \item \textit{\textbf{Task force}}\textbf{ on knowledge and data}
+    \begin{itemize}
+        \item Will provide guidelines and examples for \textit{data and knowledge }management\textit{, }and guide the development and maintenance of these, as well as \textit{data and knowledge }management \textit{reports} and advise the \textit{technical support unit} on knowledge and data in questions regarding \textit{data and knowledge }management and\textit{ reporting} as outlined in the section on provisions on \textit{data and knowledge} management reporting;
+        \item Will review the policy at least every 2 years;
+        \item Will work with the ILK \textit{task force }to determine procedures that fulfil \textit{FAIR and CARE principles} to the fullest extent possible within the mandate of the Platform;
+        \item Will review the guidelines, tutorials, \textit{workflows}, and examples related to this policy on a yearly basis to identify gaps and implement new developments;
+    \end{itemize}
+
+    \item \textit{\textbf{Task force}}\textbf{ on indigenous and local knowledge}
+    \begin{itemize}
+        \item Will work with the \textit{task force} on knowledge and data to review the policy with regard to aspects relating to IPLCs and ILK at least every 2 years, including to determine procedures that fulfil \textit{FAIR and CARE principles} to the fullest extent possible within the mandate of the Platform;
+        \item Will review the guidelines, tutorials, \textit{workflows}, and examples related to this policy, particularly with regard to aspects relating to IPLCs and ILK, on a yearly basis to identify gaps and implement new developments;
+    \end{itemize}
+
+    \item \textit{\textbf{Technical support unit}}\textbf{ on knowledge and data}
+    \begin{itemize}
+        \item Will provide support, advice, and participate in efforts from the \textit{task force }on knowledge and data to develop guidelines and examples for \textit{data and knowledge management} and \textit{reporting};
+        \item Will review the\textit{ data and knowledge management reports} from the corresponding assessment \textit{technical support units }so that they follow the data and knowledge management policy and are updated regularly;
+        \item Will make sure that the assessment \textit{technical support units} fulfil their responsibilities as outlined in this policy and the \textit{data and knowledge management reports} and will collect the metadata of the \textit{IPBES products }from the \textit{technical support units}, so that they can be accessible and searchable;
+        \item Will provide assistance in making sure that the \textit{data and knowledge management reports} adhere to this policy;
+        \item Will execute, under the guidance of the \textit{task force }on knowledge and data, and in cooperation with the \textit{secretariat}, the development and maintenance of the guidelines, tutorials, \textit{workflows}, and examples (\textit{data and knowledge management reports}) to enable IPBES to implement this policy;
+    \end{itemize}
+
+    \item \textit{\textbf{Technical support unit}}\textbf{ on indigenous and local knowledge}
+    \begin{itemize}
+        \item Will provide support, advice, and participate in efforts from the \textit{task force} on knowledge and data to develop guidelines and examples for \textit{data and knowledge} management and reporting working with\textit{ ILK} and \textit{CARE principles};
+        \item Will review the \textit{data and knowledge management reports} upon the request of the \textit{technical support unit for knowledge and data} so that they follow the data and knowledge management policy with regard to ILK and IPLCs considerations;
+        \item Will provide support, advice, and participate in efforts to implement these guidelines in IPBES assessments and other processes;
+    \end{itemize}
+
+    \item \textbf{Assessment }\textit{\textbf{technical support unit}}
+    \begin{itemize}
+        \item Will collect the \textit{data and knowledge management reports} from assessment \textit{experts};
+        \item Will provide assistance to assessment \textit{experts} in making sure that the \textit{data and knowledge management reports} adhere to this policy;
+        \item Will provide a \gls{doi} for each \textit{data deposit package;}
+        \item Will make sure that their \textit{experts }fulfil their responsibilities as outlined in this policy and in the \textit{data and knowledge management reports} and will collect the metadata of the \textit{IPBES products }from the \textit{experts} so that it can be handed over to the \textit{task force }on knowledge and data;
+        \item Will develop and maintain, under the guidance of the \textit{technical support unit} on knowledge and data, and in cooperation with the \textit{secretariat}, guidelines, tutorials, \textit{workflows}, and examples (\textit{data and knowledge management reports}) to enable IPBES to implement this policy;
+    \end{itemize}
+
+    \item \textit{\textbf{Experts}}
+    \begin{itemize}
+        \item Will prepare and keep up to date \textit{data and knowledge management reports} for their IPBES-related \textit{research}. These \textit{data and knowledge management reports }should be available at the latest at the first \textit{milestone}, and be updated for each following \textit{milestone}. The \textit{data and knowledge management reports} should conform with this policy and follow the examples in the technical guidelines;
+        \item Are responsible for fulfilling the requirements as outlined in the implementation resources listed in Annex 2 of this policy;
+        \item Are responsible for reporting issues on the implementation of the \textit{data and knowledge management reports} to the associated \textit{technical support unit.}
+    \end{itemize}
+\end{enumerate}
+
+
+\section{Provisions on \textit{data and knowledge} management reporting}
+
+\begin{enumerate}[label=(\alph*)]
+    \item \textit{data and knowledge management report} is expected for each IPBES \textit{research project}. This can be achieved by a single \textit{data and knowledge management report} for a \textit{research project} or by an individual \textit{data and knowledge management report} for each research aspect within a \textit{research project};
+
+    \item The \textit{data and knowledge }management should comply with this policy. If this is not possible, the exceptions and justifications need to be specified in the \textit{data and knowledge management report} and be acknowledged by the \textit{technical support unit} on knowledge and data;
+
+    \item It is the responsibility of the \textit{expert }to ensure that the \textit{data and knowledge management report} is created, maintained, and updated throughout the \textit{research project }life cycle and submitted to the associated\textit{ technical support unit};
+
+    \item The \textit{technical support unit} on knowledge and data provides support, and where appropriate guidelines and examples (\textit{data and knowledge management report}), to the \textit{experts }to make sure that \textit{FAIR }and\textit{ CARE principles} are followed, within the mandate of the Platform, for \textit{data and knowledge }management and documented in \textit{data and knowledge management reports}. This includes the use of open formats suitable for long-term storage and retrieval of \textit{data};
+
+    \item The \textit{task force} and \textit{technical support unit} on indigenous and local knowledge provide support, and where appropriate, guidelines and examples, to the \textit{experts }to make sure that \textit{FAIR} and \textit{CARE principles} are followed, to the fullest extent possible within the mandate of the Platform, for \textit{data and knowledge }management and documented in \textit{data and knowledge management reports}, where such \textit{data} relates to \textit{indigenous and local knowledge} or\textit{ IPLCs};
+
+    \item The IPBES \textit{secretariat }provides information about recommended long-term, and to the extent possible certified, open data repositories which provide \textit{DOIs}.
+\end{enumerate}
+
+
+
+\section{Provisions on accessibility, inclusivity, and \textit{collective benefit}}
+
+\begin{enumerate}[label=(\alph*)]
+    \item \gls{ipbesproducts} should be preserved including a \gls{doi} for each \textit{milestone }of an IPBES \textit{research project};
+
+    \item \gls{ipbesproducts} in or associated with an assessment or other \gls{ipbesproducts}, including \textit{data and knowledge management reports}, should be made openly accessible in a form that follows this policy at the latest one calendar month after the approval/acceptance of the assessment, or approval or acknowledgement of other IPBES product by the \gls{plenary}. \gls{dataandknowledge} related to \textit{milestones }should also be made accessible, as far as confidentiality rules allow for this. Embargo periods are possible but need to be approved by the \textit{task force }on knowledge and data. Restricted access to the IPBES \textit{data} underlying \gls{ipbesproducts} is only allowed under special circumstances and needs to be approved by the \textit{technical support unit }on knowledge and data;
+
+    \item Applicable ethical, privacy and confidentiality, and data governance requirements need to be followed and \textit{generated data}, if deemed necessary, anonymized before preservation;
+
+    \item The management, handling, and delivery of the materials from IPLCs adhere to the \textit{FAIR }and \textit{CARE principles} to the fullest extent possible as outlined in this policy, as well as to other binding conditions outside this policy in accordance with national law;
+
+    \item \gls{ipbesproducts} and their metadata are released with a clear and accessible data use license;
+
+    \item Allowed licenses for the \gls{ipbesproducts} are Creative Commons Copyright Waiver (CC0) and Creative Commons By Attribution (CC-BY) or licenses equivalent to these. Divergent licenses need to be approved by the \textit{technical support unit} on knowledge and data;
+
+    \item All \textit{research} within IPBES has to be conducted in accordance with agreements with the holders of the \textit{knowledge and data }regarding use, reuse, presentation, and procedures. Communication with IPLCs needs to be maintained over the whole research cycle to the extent possible within the mandate of the Platform and IPBES’ mandate to provide feedback to the knowledge holders as well as include feedback from the knowledge holders in the \textit{research}, as outlined in the IPBES approach to recognizing and working with \textit{indigenous and local knowledge} as set out in annex II to decision IPBES-5/1;
+
+    \item \gls{ipbesproducts} will be made available and accessible to the holders of the \textit{knowledge and data}, in line with agreed terms documented during ILK dialogue workshops or other activities, with due consideration to \textit{FAIR and CARE principles}.
+\end{enumerate}
+
+
+
+
+\section{Glossary}
+
+\printglossary
+
+\section{Annex 1: Cope of Practice for AI usage}
+
+\section{Annex 2: Implementation Resources}
+
+\subsection{IPBES Data and Knowledge Management Tutorials}
+
+The task force on knowledge and data has created a series of tutorials focused on data and knowledge management to facilitate the implementation of the IPBES data and knowledge management policy. These short 3-10 minute tutorials cover the following topics: the data and knowledge management policy (formally known as the data management policy), data management reports, active research data, tools, and examples.
+
+The tutorials can be found on the IPBES website:
+
+\subsection{IPBES Technical Guidelines}
+
+The technical support unit on knowledge and data has produced a series of technical guidelines on data and knowledge management, handling, and delivery to provide detailed information and recommendations on specific topics such as cartographic elements for maps or file formats. These guidelines have been reviewed by the task force on knowledge and data and serve as an important resource for assessment experts and technical support units.
+
+The technical guidelines can be found on the IPBES ICT portal:
+
+\end{document}
