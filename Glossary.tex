@@ -1,16 +1,18 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The glossaries pckage should be loaded in the main document by using %%
+%%                                                                      %%
+%% \usepackage[toc,acronym]{glossaries}                                 %%
+%% \makeglossaries                                                      %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% The glossaries pckage should be loaded in the main document by using
-%%
-%% \usepackage[toc,acronym]{glossaries}
-%% \makeglossaries
+%%% acronym entries                       %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% acronyms
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newacronym[
     description={To be added} %description
     plural=IDEs,
@@ -28,7 +30,7 @@
     {Artificial Intelligence Code of Practice} %long
 
 \newacronym[
-    description={To be added} %description
+    description={In the context of this document, \textit{AI} is limited to generative Artificial Intelligence (short: \textit{AI}). It can, for example, generate text, images, figures, videos or computer code based on prompts provided by the user. AI models are trained with large amounts of data. These models and prompts can be hidden behind familiar (non-\textit{AI}) looking interfaces like literature search interfaces or spell and grammar checkers. In this document, AI refers to all tools directly interacting with a generative \textit{AI} (e.g. chatbots) or other tools which use generative \textit{AI} in the background.}
     plural=AIs,
     firstplural=Artificial Intelligences (AIs)    
     ]
@@ -58,122 +60,127 @@
     {CARE Principles for Indigenous Data Governance}%
 
 
-% \newglossaryentry{dmr}{%
-%     name={ Data and knowledge management report},%
-%     description={ (short: data management report): A \textit{data and knowledge management report} is a formal document containing information concerning the handling of \textit{data and knowledge} during and after the finalization of the \textit{research project}. It should be drafted at the beginning of the project and be maintained and updated during the whole duration of the assessment to be kept up to date. It describes: The \textit{data and knowledge} that will be created; the process of how the \textit{data and knowledge} have been created, including references to the original data sources, scripts, and software used (see “\gls{workflow}” below); all additional information to make the process of the \textit{data and knowledge} generation as transparent and reproducible as possible; access to the \textit{data and knowledge} and where the \textit{data and knowledge} will be preserved. }%
-% }
-
-% \newglossaryentry{doi}{%
-%     name={ DOI },%
-%     description={ a Digital Object Identifier as defined in the DOI Handbook. A \gls{doi} is a digital identifier of an object, not an identifier of a digital object.\textit{ DOIs} are an ISO standard (ISO 26324-2012) and provide an actionable, interoperable, and persistent link. }%
-% }
-
-% \newglossaryentry{fair}{%
-%     name={ FAIR data principles},%
-%     description={ (short: FAIR principles): A set of guiding principles to make \textit{data} Findable, Accessible, Interoperable, and Reusable (FAIR). See here for specifications. These guiding principles should also be applied to the management of \textit{knowledge}. }%
-% }
-
-% \newglossaryentry{ilk}{%
-%     name={ Indigenous and local knowledge (ILK) systems },%
-%     description={ As noted in the IPBES core glossary; “indigenous and local knowledge systems are social and ecological knowledge practices and beliefs pertaining to the relationship of living beings, including people, with one another and with their environments.” See }%
-% }
-
-% \newglossaryentry{iplcs}{%
-%     name={ Indigenous peoples and local communities (IPLCs) },%
-%     description={ (short: IPLCs ) As noted in the IPBES core glossary; “\textit{indigenous peoples and local communities} (IPLCs) are, typically, ethnic groups who are descended from and identify with the original inhabitants of a given region, in contrast to groups that have settled, occupied or colonized the area more recently.” See }%
-% }
-
-% \newglossaryentry{mep}{%
-%     name={ Multidisciplinary Expert Panel (MEP) },%
-%     description={ a subsidiary body established by the \textit{IPBES Plenary }which oversees the scientific and technical functions of the Platform; a key role is to select \textit{experts} to carry out assessments. }%
-% }
-
-
-% \newglossaryentry{taskforce}{%
-%     name={ Task force },%
-%     description={ A working group of domain \textit{experts}, established by the \gls{plenary}, to carry out tasks as defined in the terms of reference under the Platform’s rolling work programme. }%
-% }
-
-% \newglossaryentry{technicalsupportunit}{%
-%     name={ Technical support unit },%
-%     description={ The\textit{ technical support unit} works under the oversight of the \textit{secretariat }to coordinate and administer the activities of \textit{expert }groups in support of the development of deliverables. Technical support units are dedicated to a specific assessment or a \textit{task force.} }%
-% }
-
 \newacronym[
-    description={(A \textit{data and knowledge management report} is a formal document containing information concerning the handling of \textit{data and knowledge} during and after the finalization of the \textit{research project}. It should be drafted at the beginning of the project and be maintained and updated during the whole duration of the assessment to be kept up to date. It describes: The \textit{data and knowledge} that will be created; the process of how the \textit{data and knowledge} have been created, including references to the original data sources, scripts, and software used (see “\gls{workflow}” below); all additional information to make the process of the \textit{data and knowledge} generation as transparent and reproducible as possible; access to the \textit{data and knowledge} and where the \textit{data and knowledge} will be preserved.},
+    description={(A \textit{data and knowledge management report} is a formal document containing information concerning the handling of \textit{data and knowledge} during and after the finalization of the \gls{researchproject}. It should be drafted at the beginning of the project and be maintained and updated during the whole duration of the assessment to be kept up to date. It describes: The \textit{data and knowledge} that will be created; the process of how the \textit{data and knowledge} have been created, including references to the original data sources, scripts, and software used (see "\gls{workflow}" below); all additional information to make the process of the \textit{data and knowledge} generation as transparent and reproducible as possible; access to the \textit{data and knowledge} and where the \textit{data and knowledge} will be preserved.},
     plural=DMRs,
     firstplural={Data and Knowledge Management Reports (DMRs)}
-]{dmr}{DMR}{Data and Knowledge Management Report}
+    ]
+    {dmr}
+    {DMR}
+    {Data and Knowledge Management Report}
 
 \newacronym[
     description={A Digital Object Identifier as defined in the DOI Handbook. A digital identifier of an object, not an identifier of a digital object. \textit{DOIs} are an ISO standard (ISO 26324-2012) and provide an actionable, interoperable, and persistent link.},
     plural=DOIs,
     firstplural={Digital Object Identifiers (DOIs)}
-]{doi}{DOI}{Digital Object Identifier}
+    ]
+    {doi}
+    {DOI}
+    {Digital Object Identifier}
 
 \newacronym[
     description={A set of guiding principles to make \textit{data} Findable, Accessible, Interoperable, and Reusable (FAIR). See here for specifications. These guiding principles should also be applied to the management of \textit{knowledge}.},
     firstplural={FAIR data principles},
     plural={FAIR data principles}
-]{fair}{FAIR}{FAIR data principle}
+    ]
+    {fair}
+    {FAIR}
+    {FAIR data principle}
 
 \newacronym[
-    description={As noted in the IPBES core glossary: “indigenous and local knowledge systems are social and ecological knowledge practices and beliefs pertaining to the relationship of living beings, including people, with one another and with their environments.”},
+    description={As noted in the IPBES core glossary: "indigenous and local knowledge systems are social and ecological knowledge practices and beliefs pertaining to the relationship of living beings, including people, with one another and with their environments."},
     firstplural={Indigenous and Local Knowledge systems (ILK systems)},
     plural={ILK systems}
-]{ilk}{ILK}{Indigenous and Local Knowledge system}
+    ]
+    {ilk}
+    {ILK}
+    {Indigenous and Local Knowledge system}
 
 \newacronym[
-    description={As noted in the IPBES core glossary: “\textit{indigenous peoples and local communities} (IPLCs) are, typically, ethnic groups who are descended from and identify with the original inhabitants of a given region, in contrast to groups that have settled, occupied or colonized the area more recently.”},
+    description={As noted in the IPBES core glossary: "\textit{indigenous peoples and local communities} (IPLCs) are, typically, ethnic groups who are descended from and identify with the original inhabitants of a given region, in contrast to groups that have settled, occupied or colonized the area more recently."},
     plural=IPLCs,
     firstplural={Indigenous Peoples and Local Communities (IPLCs)}
-]{iplc}{IPLC}{Indigenous People or Local Community}
+    ]
+    {iplc}
+    {IPLC}
+    {Indigenous People or Local Community}
 
 \newacronym[
     description={A subsidiary body established by the \textit{IPBES Plenary} which oversees the scientific and technical functions of the Platform; a key role is to select \textit{experts} to carry out assessments.},
     plural=MEPs,
     firstplural={Multidisciplinary Expert Panels (MEPs)}
-]{mep}{MEP}{Multidisciplinary Expert Panel}
+    ]
+    {mep}
+    {MEP}
+    {Multidisciplinary Expert Panel}
 
 \newacronym[
     description={A working group of domain \textit{experts}, established by the \gls{plenary}, to carry out tasks as defined in the terms of reference under the Platform’s rolling work programme.},
     plural={Task Forces},
     firstplural={Task Forces}
-]{tf}{TF}{Task Force}
+    ]
+    {tf}
+    {TF}
+    {Task Force}
 
 \newacronym[
     description={The \textit{technical support unit} works under the oversight of the \textit{secretariat} to coordinate and administer the activities of \textit{expert} groups in support of the development of deliverables. Technical support units are dedicated to a specific assessment or a \textit{task force}.},
     plural=TSUs,
     firstplural={Technical Support Units (TSUs)}
-]{tsu}{TSU}{Technical Support Unit}
+    ]
+    {tsu}
+    {TSU}
+    {Technical Support Unit}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% glossary
-% glossary
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% glossary entries                      %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newglossaryentry{promptengineering}{%
     name={prompt engineering},
     description={TO BR ADDED}
 }
+
+\newglossaryentry{accessbenefitsharing}{%
+    name={access and benefit-sharing},%
+    description={ is rooted in the CARE principles and refers to the understanding that data, knowledge or resources should be used in ways that benefit the community or group from which they originate. This principle ensures that the interests of the community are prioritised and that any use of data or resources contributes positively to their well-being and development. }%
+}
+
+    
 \newglossaryentry{bureau}{%
     name={ Bureau },%
     description={ A subsidiary body established by the \textit{Plenary }which carries out administrative functions. It is made up of representatives nominated from each of the United Nations regions and is chaired by the Chair of IPBES. }%
 }
 \newglossaryentry{citationsandreferences}{%
     name={ Citations and references },%
-    description={ A \textit{citation }within an \textit{IPBES product} refers to the source of information to the \textit{data} and metadata supporting IPBES deliverables, and addresses where the information came from. A \textit{reference }includes adequate details about the source of the information making it findable and traceable. }%
+    description={ A \textit{citation} within an \gls{ipbesproduct} refers to the source of information to the \textit{data} and metadata supporting IPBES deliverables, and addresses where the information came from. A \textit{reference }includes adequate details about the source of the information making it findable and traceable. }%
 }
 
 \newglossaryentry{collectivebenefit}{%
     name={ Collective benefit },%
-    description={Benefits for all. These are, in the context of this policy, direct benefits resulting from use of and access to \gls{ipbesproducts}, and \textit{knowledge and data} gathered or documented during their production. To this end\textit{, IPBES products} and \textit{knowledge and data} should, to the maximum extent possible, be openly available and designed so they are accessible to all, to allow scientists, IPBES members, IPLCs and others to use them and consequently derive benefit from them. }%
+    description={Benefits for all. These are, in the context of this policy, direct benefits resulting from use of and access to \glspl{ipbesproduct}, and \gls{dataandknowledge} gathered or documented during their production. To this end, \glspl{ipbesproduct} and \gls{dataandknowledge} should, to the maximum extent possible, be openly available and designed so they are accessible to all, to allow scientists, IPBES members, IPLCs and others to use them and consequently derive benefit from them. }%
 }
 
 \newglossaryentry{dataandknowledge}{%
     name={ Data and knowledge },%
-    description={ In many cases, \textit{data} can not be interpreted without \textit{knowledge} and must be seen as an item together with \textit{knowledge}. \gls{dataandknowledge} and \textit{knowledge} form a continuous spectrum and must not be separated from each other. In a general sense, they consist of individual units of information, which are obtained from observations, measurements, experiences, value systems, etc. They form the basis of monitoring, \textit{research}, assessments, and analysis.  \textit{		Data }can be of any nature, including among others, spatial or non-spatial, qualitative or quantitative, descriptive, and from all scientific disciplines. This includes information from \textit{indigenous peoples and local communities (IPLC)};  \textit{		Knowledge }is the understanding gained through experience, reasoning, interpretation, perception, intuition, and learning that is developed as a result of information use and processing. \gls{dataandknowledge} is often essential in the interpretation and understanding of associated \textit{data}. }%
+    description={ In many cases, \textit{data} can not be interpreted without \textit{knowledge} and must be seen as an item together with \textit{knowledge}. \gls{data} and \textit{knowledge} form a continuous spectrum and must not be separated from each other. In a general sense, they consist of individual units of information, which are obtained from observations, measurements, experiences, value systems, etc. They form the basis of monitoring, \textit{research}, assessments, and analysis.  
+    }
 }
+
+\newglossaryentry{data}{%
+    name = {data},
+    description = {Data can be of any nature, including among others, spatial or non-spatial, qualitative or quantitative, descriptive, and from all scientific disciplines. This includes information from \textit{indigenous peoples and local communities (IPLC)}.
+    }
+}
+
+\newglossaryentry{knowledge}{%
+    name = {knowledge},
+    description = {Knowledge is the understanding gained through experience, reasoning, interpretation, perception, intuition, and learning that is developed as a result of information use and processing. Knowledge is often essential in the interpretation and understanding of associated \gls{data}. }%
+}
+
 \newglossaryentry{datadepositpackage}{%
     name={ Data deposit package },%
     description={ the content deposited in a long-term repository. Each \textit{data deposit package} has a\textit{ DOI}. A \textit{data deposit package} consists of at least the \textit{data and knowledge} itself and the \textit{data and knowledge management repor}t describing the \textit{data} as outlined above, unless the data is a final product such as an assessment. }%
@@ -181,24 +188,26 @@
 
 \newglossaryentry{externaldata}{%
     name={ External data and knowledge },%
-    description={ (hereafter “external data) \gls{externaldata} is \textit{data }and \textit{knowledge }which has been generated outside of IPBES and \textit{IPBES products,} and is available and published in peer-reviewed journals, grey literature or other sources or available as \textit{indigenous and local knowledge} (ILK). These products of external entities are typically the input for \textit{research} within IPBES. IPBES is not responsible for any preservation of these products; however if the Platform documents any existing knowledge, IPBES is responsible for preserving the documentation upon agreement with the knowledge holders such as IPLCs in the case of ILK. }%
+    description={ (hereafter "external data) \gls{externaldata} is \textit{data }and \gls{knowledge} which has been generated outside of IPBES and \textit{IPBES products,} and is available and published in peer-reviewed journals, grey literature or other sources or available as \textit{indigenous and local knowledge} (ILK). These products of external entities are typically the input for \textit{research} within IPBES. IPBES is not responsible for any preservation of these products; however if the Platform documents any existing knowledge, IPBES is responsible for preserving the documentation upon agreement with the knowledge holders such as IPLCs in the case of ILK. }%
 }
 
 
 
 \newglossaryentry{ipbesexpert}{%
     name={ IPBES expert },%
-    description={ (hereafter “expert”) Any person conducting \textit{research} in the context of IPBES, in particular, its assessments and \textit{task forces}. \textit{IPBES Experts} also include \textit{task force} members advising in the context of the preparation of \textit{IPBES products.} }%
+    plural = {IPBES experts},
+    description={Any person conducting \textit{research} in the context of IPBES, in particular, its assessments and \glspl{tf}. \textit{IPBES Experts} also include \gls{mep} members advising in the context of the preparation of \glspl{ipbesproduct}. }%
 }
 
-\newglossaryentry{ipbesproducts}{%
-    name={ IPBES products },%
+\newglossaryentry{ipbesproduct}{%
+    name={IPBES product},%
+    plural={IPBES products},%
     description={ Factual records produced by and within IPBES which can be used as primary sources for scientific research and which are required to validate its results. They vary according to the area of \textit{knowledge }and may be contained in textual, non-textual, digital or physical formats including documents, spreadsheets, databases, maps, statistics, diaries, questionnaires, transcriptions, audio files, video, photographs, images, models, algorithms, scripts, log files, simulation software, methodologies and \textit{workflows}, operating procedures, standards, protocols and any new products developed in the future in digital or physical formats. \textit{Knowledge }and the data generated by applying this \textit{knowledge} to \textit{external data} are referred to as\textit{ IPBES products}. }%
 }
 
 \newglossaryentry{milestone}{%
     name={ Milestone },%
-    description={ A significant step towards the completion of the overall goal of a \textit{research project} which warrants its long-term storage. In the case of assessments, this would include the completion of zero-, first- and second-order drafts of the chapters of the assessment as well as their final versions. Other defined \textit{milestones }can be added if deemed necessary. For other \textit{research projects}, \textit{milestones }should be defined in the planning phase of the \textit{research project}. }%
+    description={ A significant step towards the completion of the overall goal of a \gls{researchproject} which warrants its long-term storage. In the case of assessments, this would include the completion of zero-, first- and second-order drafts of the chapters of the assessment as well as their final versions. Other defined \textit{milestones }can be added if deemed necessary. For other \gls{researchproject}, \textit{milestones }should be defined in the planning phase of the \gls{researchproject}. }%
 }
 
 \newglossaryentry{plenary}{%
@@ -208,7 +217,7 @@
 
 \newglossaryentry{research}{%
     name={ Research },%
-    description={ \gls{research} refers to all activities within IPBES which collect, measure, aggregate, process, integrate, or analyse \textit{data}, including \textit{indigenous and local knowledge} (\textit{ILK}), or newly generated \textit{data}\textit{and knowledge}. It also includes the documentation of \textit{ILK} during dialogue workshops or other activities with IPLCs. The term “\textit{research}” used in this policy refers to the process of preparation of \textit{IPBES products.} }%
+    description={ \gls{research} refers to all activities within IPBES which collect, measure, aggregate, process, integrate, or analyse \textit{data}, including \textit{indigenous and local knowledge} (\textit{ILK}), or newly generated \textit{data}\textit{and knowledge}. It also includes the documentation of \textit{ILK} during dialogue workshops or other activities with IPLCs. The term "\textit{research}" used in this policy refers to the process of preparation of \textit{IPBES products.} }%
 }
 
 \newglossaryentry{researchproject}{%
@@ -221,9 +230,10 @@
     description={ The \textit{secretariat }of the Platform. }%
 }
 
-\newglossaryentry{stakeholders}{%
-    name={ Stakeholders in IPBES },%
-    description={ (short: stakeholders): In the context of the work programme and the IPBES stakeholder engagement policy as set out in decision IPBES-3/4, \textit{stakeholders} act as both contributors and end-users of the Platform and are individual scientists or knowledge holders, and also institutions, organizations or groups working in the field of biodiversity (See IPBES/3/16), which: Contribute to the activities of the work programme through their experience, expertise, \textit{knowledge, data}, information and capacity-building experience; Use or benefit from the outcomes of the work programme; Encourage and support the participation of scientists and knowledge holders in the work of the Platform. }%
+\newglossaryentry{stakeholder}{%
+    name = { Stakeholders in IPBES },%
+    plural = {stakeholders},
+    description={Stakeholders in IPBES (short: stakeholders): In the context of the work programme and the IPBES stakeholder engagement policy as set out in decision IPBES-3/4, \textit{stakeholders} act as both contributors and end-users of the Platform and are individual scientists or knowledge holders, and also institutions, organizations or groups working in the field of biodiversity (See IPBES/3/16), which: Contribute to the activities of the work programme through their experience, expertise, \textit{knowledge, data}, information and capacity-building experience; Use or benefit from the outcomes of the work programme; Encourage and support the participation of scientists and knowledge holders in the work of the Platform. }%
 }
 
 \newglossaryentry{unescoopenscience}{%
@@ -232,6 +242,7 @@
 }
 
 \newglossaryentry{workflow}{%
-    name={ Workflow },%
+    name={workflow},%
+    plural={workflows},
     description={ A repeatable set of steps involved in achieving a goal. Individual steps could be ‘\textit{data and knowledge} gathering’, ‘\textit{data} filtering’, ‘\textit{data} preparation’, ‘\textit{data and knowledge} analysis’, and ‘\textit{data and knowledge} visualisation’. An analytical workflow, for example, represents the transformations made to \textit{data} along the scientific process, including \textit{data} sources, scripts and software used. }%
 }
