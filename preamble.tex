@@ -1,0 +1,73 @@
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,      % Enables colored links instead of boxes
+    urlcolor=blue,        % Blue color for URLs (underlined)
+    linkcolor=red,        % Red color for internal links (e.g., \ref, \gls)
+    citecolor=green,      % Green color for citations (\cite)
+}
+
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{titlesec}
+\usepackage{textcomp}
+\usepackage{footnote}
+\usepackage{lipsum}
+\makesavenoteenv{tabular}
+\usepackage{enumitem}
+\usepackage{fontawesome5} % For the email (envelope) icon
+
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{pifont} % for ✔
+
+\usepackage[toc]{glossaries}
+\renewcommand{\glossarysection}[2][]{}
+\renewcommand*{\glstextformat}[1]{\textit{\textcolor{blue}{#1}}}
+
+% \let\oldnewacronym\newacronym
+% \renewcommand{\newacronym}[2][]{%
+%   \oldnewacronym[type=main,#1]{#2}%
+% }
+
+\input{Glossary}
+
+\makeglossaries
+
+% adjust space between number and Header text
+\usepackage{tocloft}
+\renewcommand{\cftsecnumwidth}{2.5em}  % Adjust this value as needed
+\renewcommand{\cftsubsecnumwidth}{2.5em}  % Adjust this value as needed
+
+% Roman Numbers for section numbering
+\renewcommand{\thesection}{\Roman{section}}
+
+% Alphabetic (a), (b), ... for subsections
+% \usepackage{alphalph}
+% \renewcommand{\thesubsection}{(\alphalph{\value{subsection}})}
+
+
+
+\usepackage{draftwatermark}
+\SetWatermarkText{CONFIDENTIAL DRAFT}
+\SetWatermarkScale{1.5}     % Size
+\SetWatermarkColor[gray]{0.85}  % Color (light gray)
+\SetWatermarkAngle{45}      % Angle
+
+% \author{
+%     \LARGE \textbf{Editors} \\[0.5cm]  % This adds "Editors" in bold and slightly spaced from the names
+%     %%
+%     Rainer M. Krug \href{https://orcid.org/0000-0002-7490-0066}{\includegraphics[width=10pt]{orcid.png}}\ \href{mailto:Rainer@Krugs.de}{\faEnvelope}\ \thanks{Institution Name} \\
+%     %%
+%     Peter Bates \\ 
+%     %%
+%     Joy Kumagai \\
+%     %%
+%     Aidin Niamir
+% }
+% \renewcommand{\author}{Editors}
+
+% \date{}
+
