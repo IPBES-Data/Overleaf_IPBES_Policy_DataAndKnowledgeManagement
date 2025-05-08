@@ -35,14 +35,11 @@ $(DOCXFILE): $(HTMLFILE)
 	@echo "✅ Conversion complete: $(DOCXFILE)"
 
 # Clean rules stay phony
-clean_tmp:
+clean_temp:
 	@echo "�� Cleaning up auxiliary files..."
-	rm -f $(BASENAME).{aux,log,glo,gls,glg,idx,ilg,ind,dvi,idv,tmp,4tc,css,xref,lg,ist,4ct,tdo,toc}
-	rm -f $(HTMLFILE).aux $(BASENAME).out
-	rm -f $(BASENAME)[0-9]*.svg
-	rm -f $(BASENAME)[0-9]*.html
+	find . -maxdepth 1 -type f ! \( -name "*.tex" -o -name "*.html" -o -name "*.pdf" -o -name "*.docx" \) -exec rm -f {} +
 
-clean: clean_tmp
+clean: clean_temp
 	@echo "�� Cleaning all files..."
 	rm -f $(HTMLFILE)
 	rm -f $(PDFFILE)
